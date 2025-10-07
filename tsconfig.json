@@ -24,12 +24,14 @@
     // Paths
 
     "rootDir": "src/",
-    "baseUrl": "./",
+    "baseUrl": "src/",
 
     // Misc
     "jsx": "react-jsx",
     "paths": {
-      "layouts/*": ["./src/layouts/*"]
+      "features/*": ["features/*"],
+      "layouts/*": ["layouts/*"],
+      "ui/*": ["ui/*"]
     }
   },
   "include": ["src/**/*"]

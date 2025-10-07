@@ -73,7 +73,9 @@ const configuration: Configuration = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     alias: {
+      features: path.resolve(__dirname, 'src', 'features'),
       layouts: path.resolve(__dirname, 'src', 'layouts'),
+      ui: path.resolve(__dirname, 'src', 'ui'),
     },
   },
   optimization: {

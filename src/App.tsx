@@ -1,5 +1,6 @@
 import React from 'react';
 import { RouterProvider } from 'react-router';
+import './theme/index.css';
 
 import router from './router';
 
