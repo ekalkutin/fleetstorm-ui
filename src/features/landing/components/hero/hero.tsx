@@ -8,7 +8,12 @@ const { Title } = Typography;
 export const Hero: React.FC = () => {
   return (
     <section className={styles.container}>
-      <Flex align='center' justify='center' gap={48}>
+      <Flex
+        align='center'
+        style={{ minHeight: '60vh' }}
+        justify='center'
+        gap={48}
+      >
         <div>
           <div>
             <Title>The Future of Fleet Management is Here.</Title>
