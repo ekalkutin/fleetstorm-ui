@@ -1,0 +1,19 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.subtitle {
+  font-weight: 300 !important;
+}
+
+.cta {
+  margin-top: 48px;
+  button {
+    margin-right: 12px;
+  }
+}
