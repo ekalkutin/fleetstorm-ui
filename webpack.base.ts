@@ -75,6 +75,7 @@ const configuration: Configuration = {
     alias: {
       features: path.resolve(__dirname, 'src', 'features'),
       layouts: path.resolve(__dirname, 'src', 'layouts'),
+      theme: path.resolve(__dirname, 'src', 'theme'),
       ui: path.resolve(__dirname, 'src', 'ui'),
     },
   },
