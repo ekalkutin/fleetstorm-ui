@@ -31,5 +31,5 @@ jobs:
           k8s-secret: ${{ secrets.KUBE_TOKEN }}
       - name: Deploy to cluster
         run: |
-          kubectl set image deployment/fleetstorm-ui fleetstorm-ui=${{ env.IMAGE_NAME }}:${{ inputs.image_tag }} -n applications
-          kubectl rollout status deployment/fleetstorm-ui -n applications
+          kubectl set image deployment/fleetstorm-ui fleetstorm-ui=${{ env.IMAGE_NAME }}:${{ inputs.image_tag }} -n apps-prod
+          kubectl rollout status deployment/fleetstorm-ui -n apps-prod
