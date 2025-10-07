@@ -1,5 +1,11 @@
 import React from 'react';
 
+import { FleetstormHeader } from 'features/landing/components/header/header';
+
 export const HomePage: React.FC = () => {
-  return <div>Home page</div>;
+  return (
+    <React.Fragment>
+      <FleetstormHeader />
+    </React.Fragment>
+  );
 };
