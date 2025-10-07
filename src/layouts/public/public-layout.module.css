@@ -1,0 +1,5 @@
+.content {
+  max-width: var(--app-container-max-width);
+  margin: 0 auto;
+  margin-top: 48px;
+}

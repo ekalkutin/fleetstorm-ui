@@ -3,6 +3,8 @@ import React from 'react';
 
 import { AppLogo } from 'ui/components/app-logo/app-logo';
 
+import styles from './header.module.css';
+
 const { Header } = Layout;
 
 export const FleetstormHeader: React.FC = () => {
@@ -10,7 +12,7 @@ export const FleetstormHeader: React.FC = () => {
 
   return (
     <Header style={{ boxShadow: token.boxShadow }}>
-      <Flex gap='middle' align='center' justify='space-between'>
+      <Flex className={styles.container} align='center' justify='space-between'>
         <AppLogo />
         <Flex gap={'middle'}>
           <Button type='text'>Home</Button>
