@@ -19,14 +19,15 @@ export const Hero: React.FC = () => {
             <Flex vertical gap={48}>
               <div>
                 <Title level={3} style={{ color: token.colorPrimary }}>
-                  Simply the best online tools for fleet management
+                  Лучшие онлайн-инструменты для управления автопарком
                 </Title>
-                <Title level={2}>The Future of Fleet Management is Here.</Title>
+                <Title level={2}>Будущее управления автопарком уже здесь</Title>
                 <Text>
-                  Automate repetitive car-sharing fleet tasks to improve your
-                  efficiency. Auto-sync platform calendars to limit double
-                  bookings, auto-send customizable templated messages to
-                  travelers to improve response times, and much more!
+                  Автоматизируйте рутинные задачи каршеринга, чтобы повысить
+                  эффективность. Синхронизируйте календари платформ, чтобы
+                  избежать двойных бронирований, автоматически отправляйте
+                  настраиваемые шаблонные сообщения путешественникам для
+                  ускорения отклика — и многое другое!
                 </Text>
               </div>
               <Space>

@@ -10,38 +10,38 @@ import {
 export const features = [
   {
     icon: <CarOutlined />,
-    title: 'Smart Fleet Management',
+    title: 'Умное управление автопарком',
     description:
-      'Keep all your vehicles, documents, and bookings organized in one place. Track availability, service schedules, and performance in real time.',
+      'Храните все автомобили, документы и бронирования в одном месте. Отслеживайте доступность, графики обслуживания и показатели в реальном времени.',
   },
   {
     icon: <CalendarOutlined />,
-    title: 'Online Bookings & Customer Portal',
+    title: 'Онлайн-бронирования и клиентский портал',
     description:
-      'Let customers book directly online — fast, simple, and always up to date. Get instant notifications and manage reservations effortlessly.',
+      'Позвольте клиентам бронировать онлайн — быстро, просто и всегда актуально. Получайте мгновенные уведомления и управляйте резервами без лишних усилий.',
   },
   {
     icon: <TeamOutlined />,
-    title: 'Role-Based Access Control',
+    title: 'Ролевая система доступа',
     description:
-      'Assign roles and permissions across your team. Admins, managers, and operators get the right tools — no clutter, no confusion.',
+      'Назначайте роли и права для всей команды. Администраторы, менеджеры и операторы получают нужные инструменты — без лишнего и без путаницы.',
   },
   {
     icon: <BellOutlined />,
-    title: 'Automated Reminders',
+    title: 'Автоматические напоминания',
     description:
-      'Never miss an important task. Get automatic alerts for upcoming services, expiring insurance, or pending payments.',
+      'Не пропустите ни одной важной задачи. Получайте автоматические уведомления о предстоящем обслуживании, истекающих страховках или ожидающих платежах.',
   },
   {
     icon: <PieChartOutlined />,
-    title: 'Analytics & Reports',
+    title: 'Аналитика и отчёты',
     description:
-      'Understand your business with clear dashboards and detailed insights. See what’s working and make data-driven decisions.',
+      'Понимайте свой бизнес с помощью наглядных дашбордов и подробной аналитики. Узнайте, что работает, и принимайте решения на основе данных.',
   },
   {
     icon: <LinkOutlined />,
-    title: 'Integration Ready',
+    title: 'Готовность к интеграции',
     description:
-      'Connect with your existing systems — accounting, CRM, or payment providers — through flexible APIs and integrations.',
+      'Подключайтесь к существующим системам — бухгалтерии, CRM или платёжным сервисам — с помощью гибких API и интеграций.',
   },
 ];

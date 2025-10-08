@@ -20,7 +20,7 @@ export const HomePage: React.FC = () => {
             marginBottom: '64px',
           }}
         >
-          🚀 Features that Simplify Your Workflow
+          🚀 Функции, упрощающие вашу работу
         </Title>
 
         <Row gutter={[24, 24]}>
