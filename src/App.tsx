@@ -3,6 +3,7 @@ import React from 'react';
 import { RouterProvider } from 'react-router';
 import './theme/index.css';
 
+import { IntlWrapper } from 'features/i18n';
 import { theme } from 'theme/antd-theme';
 
 import router from './router';
@@ -10,9 +11,11 @@ import router from './router';
 export const App: React.FC = () => {
   return (
     <React.Fragment>
-      <ConfigProvider theme={theme}>
-        <RouterProvider router={router} />
-      </ConfigProvider>
+      <IntlWrapper>
+        <ConfigProvider theme={theme}>
+          <RouterProvider router={router} />
+        </ConfigProvider>
+      </IntlWrapper>
     </React.Fragment>
   );
 };

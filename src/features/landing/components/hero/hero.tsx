@@ -1,6 +1,7 @@
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { Button, Typography, Image, Flex, Row, Col, Space, theme } from 'antd';
 import React from 'react';
+import { useIntl } from 'react-intl';
 
 import { AppContainer } from 'ui/components/app-container/app-container';
 
@@ -10,6 +11,7 @@ const { Title, Text } = Typography;
 
 export const Hero: React.FC = () => {
   const { token } = theme.useToken();
+  const intl = useIntl();
 
   return (
     <section className={styles.container}>
@@ -19,24 +21,20 @@ export const Hero: React.FC = () => {
             <Flex vertical gap={48}>
               <div>
                 <Title level={3} style={{ color: token.colorPrimary }}>
-                  Лучшие онлайн-инструменты для управления автопарком
+                  {intl.formatMessage({ id: 'app.heading' })}
                 </Title>
-                <Title level={2}>Будущее управления автопарком уже здесь</Title>
-                <Text>
-                  Автоматизируйте рутинные задачи каршеринга, чтобы повысить
-                  эффективность. Синхронизируйте календари платформ, чтобы
-                  избежать двойных бронирований, автоматически отправляйте
-                  настраиваемые шаблонные сообщения путешественникам для
-                  ускорения отклика — и многое другое!
-                </Text>
+                <Title level={2}>
+                  {intl.formatMessage({ id: 'app.title' })}
+                </Title>
+                <Text>{intl.formatMessage({ id: 'app.subtitle' })}</Text>
               </div>
               <Space>
                 <Button size='large' type='primary'>
-                  Get started
+                  {intl.formatMessage({ id: 'cta.start' })}
                   <ArrowRightOutlined />
                 </Button>
                 <Button color='default' variant='solid' size='large'>
-                  See demo
+                  {intl.formatMessage({ id: 'cta.demo' })}
                 </Button>
               </Space>
             </Flex>

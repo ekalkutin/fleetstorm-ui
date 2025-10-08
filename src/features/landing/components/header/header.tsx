@@ -1,6 +1,7 @@
-import { Button, Flex, Layout, theme } from 'antd';
+import { Button, Flex, Layout, Select, Space, theme } from 'antd';
 import React from 'react';
 
+import { useLocale } from 'features/i18n';
 import { AppContainer } from 'ui/components/app-container/app-container';
 import { AppLogo } from 'ui/components/app-logo/app-logo';
 
@@ -10,6 +11,8 @@ const { Header } = Layout;
 
 export const FleetstormHeader: React.FC = () => {
   const { token } = theme.useToken();
+
+  const { locale, setLocale } = useLocale();
 
   return (
     <Header
@@ -24,7 +27,18 @@ export const FleetstormHeader: React.FC = () => {
             <Button type='text'>Pricing</Button>
             <Button type='text'>Contact</Button>
           </Flex>
-          <Button type='primary'>Sign in</Button>
+          <Space>
+            <Select
+              value={locale}
+              style={{ width: 120 }}
+              onChange={setLocale}
+              options={[
+                { value: 'en', label: 'English 🇺🇸' },
+                { value: 'ru', label: 'Русский 🇷🇺' },
+              ]}
+            />
+            <Button type='primary'>Sign in</Button>
+          </Space>
         </Flex>
       </AppContainer>
     </Header>
